@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <!-- Tailwind CSS CDN LINK -->
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+
+</head>
+<body>
+     <!-- Responsive Navbar -->
+     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10" style="height: 50px;">
+        <h1 class="text-2xl font-medium drop-shadow-lg">GREENDEN</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+           class="md:hidden w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sidebar -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+     </section>
+
+    <!-- Header Section -->
+     <section class="p-5 text-center">
+        <h1 id="search" class="font-bold text-3xl text-center mt-5">Our Products</h1>
+        <input id="Search" placeholder="Search for a Product... "type="text" class="p-2 m-3 border border-black" style="width: 80%;">
+        
+     </section>
+
+     <!--Best Seller  -->
+     <section class="p-4 text-center">
+
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./images/img-1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Holy Basil or Tulsi</h1>
+                <p>$100</p>
+            </div>
+
+            <div>
+                <img src="./images/img-2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Money Plant</h1>
+                <p>$80</p>
+            </div>
+
+            <div>
+                <img src="./images/img-3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Crassula</h1>
+                <p>$150</p>
+            </div>
+
+            <div>
+                <img src="./images/img-4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>White Camellia</h1>
+                <p>$200</p>
+            </div>
+            <div>
+                <img src="./images/image-1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Dracaena fragrans</h1>
+                <p>$50</p>
+            </div>
+
+            <div>
+                <img src="./images/image-3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Rose Plant</h1>
+                <p>$90</p>
+            </div>
+
+            <div>
+                <img src="./images/image-6.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>white peony</h1>
+                <p>$70</p>
+            </div>
+
+            <div>
+                <img src="./images/image-5.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Dianthus caryophyllus</h1>
+                <p>$60</p>
+            </div>
+        </div>
+
+    </section>
+     <!-- Footer -->
+     <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="font-bold text-4xl">Greenden</h1>
+        <p>The Standard chunk of Lorem ispum used since the 1500s is reproduced below for those interest</p>
+        <p>@ 2025 Greenday.com</p>
+    </section>
+   <script src="product.js"></script> 
+</body>
+</html>
